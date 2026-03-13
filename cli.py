@@ -1,15 +1,4 @@
-"""
-cli.py - Command-line interface for the Binance Futures Testnet Trading Bot.
 
-Run with:
-    python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
-    python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 30000
-    python cli.py --symbol BTCUSDT --side BUY --type STOP_LIMIT --quantity 0.01 --stop-price 28000 --price 27900
-
-API credentials are loaded from a .env file:
-    API_KEY=your_testnet_api_key
-    API_SECRET=your_testnet_api_secret
-"""
 
 import argparse
 import os
@@ -167,16 +156,13 @@ def load_credentials() -> tuple[str, str]:
     return api_key, api_secret
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
 
 def main():
     logger = setup_logging()
     parser = build_parser()
     args = parser.parse_args()
 
-    # --- Validate all inputs before touching the API ---
+ 
     try:
         symbol = validate_symbol(args.symbol)
         side = validate_side(args.side)
