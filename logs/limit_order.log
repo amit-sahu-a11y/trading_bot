@@ -1,0 +1,10 @@
+2025-03-13 10:21:47 [INFO] trading_bot - Logging started. Log file: logs/trading_bot.log
+2025-03-13 10:21:47 [INFO] trading_bot.client - Ping successful — testnet is reachable.
+2025-03-13 10:21:47 [INFO] trading_bot - Checking connectivity to Binance Testnet...
+2025-03-13 10:21:48 [INFO] trading_bot - Submitting LIMIT order...
+2025-03-13 10:21:48 [INFO] trading_bot.orders - Placing LIMIT order | SELL 0.01 BTCUSDT @ 86000.0
+2025-03-13 10:21:48 [INFO] trading_bot.client - Sending order request → https://testnet.binancefuture.com/fapi/v1/order
+2025-03-13 10:21:48 [INFO] trading_bot.client - Order params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 86000.0, 'timeInForce': 'GTC', 'timestamp': 1741861308441}
+2025-03-13 10:21:49 [INFO] trading_bot.client - Response status: 200
+2025-03-13 10:21:49 [INFO] trading_bot.client - Response body: {"orderId": 3851271043, "symbol": "BTCUSDT", "status": "NEW", "clientOrderId": "x-Cb7ytekJb9d2ca71e8f", "price": "86000.00", "avgPrice": "0.00", "origQty": "0.01", "executedQty": "0.00", "cumQuote": "0.00", "timeInForce": "GTC", "type": "LIMIT", "reduceOnly": false, "closePosition": false, "side": "SELL", "positionSide": "BOTH", "stopPrice": "0.00", "workingType": "CONTRACT_PRICE", "priceProtect": false, "origType": "LIMIT", "priceMatch": "NONE", "selfTradePreventionMode": "NONE", "goodTillDate": 0, "updateTime": 1741861309017}
+2025-03-13 10:21:49 [INFO] trading_bot - Order success | ID=3851271043 | Status=NEW
